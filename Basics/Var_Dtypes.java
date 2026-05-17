@@ -1,4 +1,6 @@
-class Var_Dtypes {
+package Basics;
+
+public class Var_Dtypes {
   public static void main(String[] args){
     // Variable and data types.
     int age = 19;
