@@ -1,0 +1,26 @@
+package Recursion;
+import java.util.Scanner;
+
+public class Fibonacci {
+    public static int Fibo(int n) {
+       if(n==0){
+        return 0;
+       }
+       if(n==1){
+        return 1;
+       }
+       return Fibo(n-1)+Fibo(n-2);
+    }
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        System.out.print("enter nth term :- ");
+        int n =sc.nextInt();
+
+        for(int i = 0; i < n; i++) {
+        System.out.print(Fibo(i) + " ");
+        }
+
+        sc.close();
+    }    
+}
