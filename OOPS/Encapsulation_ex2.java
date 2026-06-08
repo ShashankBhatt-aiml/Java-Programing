@@ -8,6 +8,14 @@ class Atm{
         this.name = name;
     }
 
+    public String get_name(){
+        return name;
+    }
+    
+    public int get_pin(){
+        return pin;
+    }
+
     public void set_pin(int pin){
         if(pin>=1000&pin<=9999){
             this.pin = pin;
